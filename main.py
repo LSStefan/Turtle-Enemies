@@ -9,12 +9,12 @@ pygame.mixer.init()
 WIDTH,HEIGHT = 1366,695
 screen = pygame.display.set_mode((WIDTH,HEIGHT))
 pygame.display.set_caption("Turtle Enemies")
-background = pygame.transform.scale(pygame.image.load("D:\pycharm\Turtle Enemies\Assets\Background.png"),(1366,695))
-ball = pygame.transform.scale(pygame.image.load("D:\pycharm\Turtle Enemies\Assets\Ball.png"),(150,150))
+background = pygame.transform.scale(pygame.image.load(".\Assets\Background.png"),(1366,695))
+ball = pygame.transform.scale(pygame.image.load(".\Assets\Ball.png"),(150,150))
 pos = pygame.Rect(600,250,150,150)
 enemy_pos = pygame.Rect(0,330,130,70)
-frog = pygame.transform.scale(pygame.image.load("D:\pycharm\Turtle Enemies\Assets\Enemy.png"),(130,70))
-frog2 = pygame.transform.scale(pygame.image.load("D:\pycharm\Turtle Enemies\Assets\Enemy2.png"),(130,70))
+frog = pygame.transform.scale(pygame.image.load(".\Assets\Enemy.png"),(130,70))
+frog2 = pygame.transform.scale(pygame.image.load(".\Assets\Enemy2.png"),(130,70))
 enemy_states = [frog,frog2] #for walking animation
 enemys = []
 lines = [100,330,550]
@@ -26,17 +26,17 @@ SCORE_FONT = pygame.font.SysFont('comicsans',16)
 FONT = pygame.font.SysFont('calibri',200)
 FONT2 = pygame.font.SysFont('calibri',80)
 score = 0
-broscoi = pygame.transform.scale(pygame.image.load('D:\pycharm\Turtle Enemies\Assets\Broscoi.jpg'),(WIDTH,HEIGHT))
+broscoi = pygame.transform.scale(pygame.image.load('.\Assets\Broscoi.jpg'),(WIDTH,HEIGHT))
 frog_vel = 10
 lives  = 2
-music = mixer.Sound("D:\pycharm\Turtle Enemies\Audio\The Sky.mp3")
+music = mixer.Sound(".\Audio\The Sky.mp3")
 music.set_volume(0.4)
 music.play()
-lifeup_sound = mixer.Sound("D:\pycharm\Turtle Enemies\Audio\Lifeup.wav")
+lifeup_sound = mixer.Sound(".\Audio\Lifeup.wav")
 hit_sounds = []
 for index in range(0,14):
-    hit_sounds.append(mixer.Sound(f"D:\pycharm\Turtle Enemies\Audio\Turtle ({index + 1}).wav"))
-lose_sound = mixer.Sound("D:\pycharm\Turtle Enemies\Audio\Lose.wav")
+    hit_sounds.append(mixer.Sound(f".\Audio\Turtle ({index + 1}).wav"))
+lose_sound = mixer.Sound(".\Audio\Lose.wav")
 
 def draw():
     global score
