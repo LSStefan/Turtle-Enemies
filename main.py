@@ -11,7 +11,7 @@ screen = pygame.display.set_mode((WIDTH,HEIGHT))
 pygame.display.set_caption("Turtle Enemies")
 background = pygame.transform.scale(pygame.image.load(".\Assets\Background.png"),(1366,695))
 ball = pygame.transform.scale(pygame.image.load(".\Assets\Ball.png"),(150,150))
-pos = pygame.Rect(600,250,150,150)
+pos = pygame.Rect(600,250,150,150)  #ball position
 enemy_pos = pygame.Rect(0,330,130,70)
 frog = pygame.transform.scale(pygame.image.load(".\Assets\Enemy.png"),(130,70))
 frog2 = pygame.transform.scale(pygame.image.load(".\Assets\Enemy2.png"),(130,70))
