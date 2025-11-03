@@ -1,10 +1,8 @@
 # Turtle-Enemies
 
-Un joc 2D simplu construit cu Pygame, dezvoltat ca proiect practic in cadrul cursului "Python 101" la Cisco Academy.
+Un joc 2D construit cu Pygame, dezvoltat ca proiect practic in cadrul cursului "Python 101" la Cisco Academy.
 
-## Descriere
 
-Turtle-Enemies este un joc de tip arcade in care controlezi o broasca testoasa (sau un personaj asemanator) ce trebuie sa evite sau sa infrunte diversi inamici. Scopul este sa aplici conceptele fundamentale de programare in Python si dezvoltarea jocurilor: bucla jocului, gestionarea sprite-urilor, interactiunea cu inamicii, coliziuni etc.
 
 ## Functionalitati
 
